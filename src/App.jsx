@@ -38,6 +38,7 @@ export default function App() {
 
   return (
     <div className="container">
+      <h1>Javascript Calculator</h1>
       <div className="grid">
         <div onClick={display} className="dis">
           <input type="text" value={expression} placeholder="0" disabled />
@@ -99,6 +100,7 @@ export default function App() {
           .
         </div>
       </div>
+      <footer><p>Coded By <a  target="_blank" href="https://erickrosa.dev" >Erick Rosa</a></p></footer>
     </div>
   );
 }

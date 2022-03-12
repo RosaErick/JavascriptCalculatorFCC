@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  flex-direction: center;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 background-color:#ccc;
@@ -80,4 +80,22 @@ color:#fff;
 .total {
   padding: 5px;
   color: rgb(214, 214, 48);
+}
+
+
+footer{
+  font-family: monospace;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 0.01px;
+}
+
+footer a{
+text-decoration: none;
+color:#000;
+}
+
+footer a:hover{
+  text-decoration: underline;
 }
