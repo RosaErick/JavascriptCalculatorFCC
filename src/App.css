@@ -3,7 +3,7 @@
   flex-direction: center;
   justify-content: center;
   align-items: center;
-
+background-color:#ccc;
   height: 100vh;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .padButton:hover{
-border:2px solid #ffff;
+border:1px solid #ffff;
 
 }
 
@@ -78,6 +78,6 @@ color:#fff;
 }
 
 .total {
-  padding: 5px 15px;
+  padding: 5px;
   color: rgb(214, 214, 48);
 }

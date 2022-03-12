@@ -7,10 +7,18 @@ export default function App() {
 
   const display = (symbol) => {
     setExpression((prev) => prev + symbol);
+    if (expression[expression.length - 1] == "=") {
+      if (/[1-9.]/.test(symbol)) {
+        setExpression(symbol);
+      } else {
+        setExpression(response + symbol);
+      }
+    }
   };
 
   const calculate = () => {
     setResponse(eval(expression));
+    setExpression((prev) => prev + "=");
   };
 
   const clear = () => {
@@ -33,7 +41,7 @@ export default function App() {
       <div className="grid">
         <div onClick={display} className="dis">
           <input type="text" value={expression} placeholder="0" disabled />
-          <div className="total">{response}</div>
+          <div className="total">{response ? response : null}</div>
         </div>
         <div onClick={clear} className="padButton C tomato">
           C
